@@ -66,7 +66,7 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
             />
                       */}
           <button
-            class="btn waves-effect waves-light"
+            className="btn waves-effect waves-light"
             type="submit"
           >
             Buscar Clima
