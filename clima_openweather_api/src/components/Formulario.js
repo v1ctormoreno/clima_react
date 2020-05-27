@@ -32,10 +32,8 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
     }
 
     return (
-      <form 
-      onSubmit={handleSubmit}
-      >
-          {error ? <Error mensaje="Ambos campos son obligatorios"></Error>: null}
+      <form onSubmit={handleSubmit}>
+        {error ? <Error mensaje="Ambos campos son obligatorios"></Error> : null}
         <div className="input-field col s12">
           <input
             type="text"
@@ -60,10 +58,19 @@ const Formulario = ({busqueda, guardarBusqueda, guardarConsultar}) => {
           <label htmlFor="pais">País</label>
         </div>
         <div className="input-field col s12">
-            <input type="submit" 
-            value="Buscar Clima"
-            className="waves-effect waves-light btn-large btn-block yellow accent-4"
+          {/* 
+            <input
+              type="submit"
+              value="Buscar Clima"
+              className="waves-effect waves-light btn-large btn-block yellow accent-4"
             />
+                      */}
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+          >
+            Buscar Clima
+          </button>
         </div>
       </form>
     );
